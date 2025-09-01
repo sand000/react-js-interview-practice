@@ -9,6 +9,8 @@ import StaggeredList from "@/components/Animation/StaggeredList";
 import GestureBox from "@/components/Animation/GestureBox";
 import ProgressBar from "@/components/Progressbar";
 
+import FormikForm from "@/components/Form-handling/FormikForm";
+
 const publishableKey = process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY;
 
 if (!publishableKey) {
@@ -69,7 +71,8 @@ export default function Home() {
       {/* <ToggleBox />
       <StaggeredList />
       <GestureBox /> */}
-      <ProgressBar/>
+      {/* <ProgressBar/> */}
+      <FormikForm />
     </div>
   );
 }
